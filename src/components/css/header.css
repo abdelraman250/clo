@@ -1,0 +1,62 @@
+
+
+/* start navbar*/
+.navbar{
+    padding: 0px !important;
+    top: 8px;
+    position: fixed !important;
+    width: 100%;
+    background-color: #FDFAF4 !important;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+}
+.logo p{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    color: var(--gr-color);
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.bg-light {
+    background-color: #FDFAF4 !important;
+}
+.navbar-expand-lg .navbar-nav{
+    width: 100%;
+        justify-content: center;
+        gap: 14px;
+}
+.navbar svg{
+    color: var(--gr-color);
+    width: 50px;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    border-color: var(--gr-color)
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.9);
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover,.navbar-expand-lg .navbar-nav .nav-link:focus{
+    color: white;
+    background-color: #af746c;
+    border-radius: 25px;
+    padding: 9px 12px;
+}
+input{
+    height: 20px;
+    width: 141px;
+}
+svg{
+    cursor: pointer;;
+}
+/* end navbar*/

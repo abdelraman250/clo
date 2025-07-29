@@ -1,0 +1,13 @@
+footer{
+    background-color: #0F172B;
+}
+footer h2 {
+    color: #ffab45;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+.company div:first-child div, .contact div:first-child div,.opening div:first-child div,.new-letter div:first-child div{
+    width: 44px;
+    height: 2px;
+    background-color: #ffab45;
+}
+/* end footer*/

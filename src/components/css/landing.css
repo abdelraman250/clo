@@ -1,0 +1,21 @@
+/* start landing*/
+.landing{
+    top: 0px;
+    background-image: linear-gradient(to right, #b9b0a2, #ebe1ce);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.landing h1{
+    font-size: 81px;
+}
+.landing img{
+    width: 96%;
+}
+.btn{
+    color: white;
+    background-color: black;
+    border-radius: 21px;
+    margin-top: 10px;
+}
+/* end landing*/

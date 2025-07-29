@@ -1,0 +1,22 @@
+.parent{
+    background-color: #f7f1e59e;
+    margin-top: 25px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  color: #7cd739;
+  font-size: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5%;
+    row-gap: 15px;
+    margin: 23px auto;
+
+    padding: 10px;
+}
+
+
+li{
+    width: fit-content;
+}
