@@ -1,9 +1,10 @@
 import { useContext } from "react";
-import CardItem from "./carditem";
 import { Shopping } from "./shopingcontext";
+import { shopingCartCreation } from "./function";
 
 export default function ShopCart() {
-  const { shopCart } = useContext(Shopping);
+  const { shopCart,setshopcart } = useContext(Shopping);
+
 
   if (shopCart.length === 0) {
     return (
@@ -15,12 +16,5 @@ export default function ShopCart() {
       </div>
     );
   }
-  return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>shoping cart {shopCart.length} </h1>
-      <div className="divcard" id="divcard">
-        <CardItem />
-      </div>
-    </div>
-  );
+  return shopingCartCreation(shopCart, setshopcart);
 }

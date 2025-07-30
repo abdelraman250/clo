@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import Product from "./Product";
 import { Shopping } from "./shopingcontext";
 import "../css/products.css"
+import productscreating from "./function";
 
 export default function Products() {
-  const { loading, data, setcategory } = useContext(Shopping);
+  const { loading, data, setcategory,shopCart,setshopcart,category } = useContext(Shopping);
 
   function filtering(ele) {
     const filteredData = data.filter((element) => {
@@ -38,18 +38,13 @@ export default function Products() {
                   setcategory(filtering(e.currentTarget.textContent.toLocaleLowerCase()));
                 }}
               >
-                { list}
+                {list}
               </li>
             );
           })}
         </ul>
       </div>
-      <div>
-        <h1 style={{ textAlign: "center" }}>Products</h1>
-        <div className="divcard" id="divcard">
-          <Product />
-        </div>
-      </div>
+      {category.length === 0? productscreating(data,setshopcart,shopCart):productscreating(category,setshopcart,shopCart)}
     </div>
   );
 }
