@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Shopping } from "./shopingcontext";
 import { shopingCartCreation } from "./function";
+import Header from "./header";
 
 export default function ShopCart() {
   const { shopCart,setshopcart } = useContext(Shopping);
@@ -16,5 +17,10 @@ export default function ShopCart() {
       </div>
     );
   }
-  return shopingCartCreation(shopCart, setshopcart);
+  return (
+    <>
+      <Header />
+      {shopingCartCreation(shopCart, setshopcart)}
+    </>
+  );
 }

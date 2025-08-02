@@ -1,0 +1,47 @@
+@media (min-width: 992px) {
+
+    .containner{
+        max-width: 720px;
+    }
+}
+.login,.diff{
+    background-color: #f5d4a747;
+}
+.login h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    color: #086050;
+    font-weight: 900;
+    font-size: 39px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    text-align: start;
+}
+.login img{
+    width: 100%;
+}
+/* start form*/
+#remember-me{
+    width: 25px;
+}
+#email,#password{
+    border: 1px solid #95d59594;
+        border-radius: 25px;
+}
+.login p{
+    font-weight: 700;
+    font-size: 32px;
+}
+button{
+    font-size: 24px;
+    border: 1px solid #77d7774d;
+    border-radius: 38px;
+    padding: 1px 28px;
+}
+button:hover{
+    background-color: #000000cc;
+    color: white;
+}
+form a{
+    position: relative;
+}

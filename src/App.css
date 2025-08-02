@@ -16,7 +16,9 @@ body{
 li {
   cursor: pointer;
 }
-
+.parrent{
+  margin-top: 11%;
+}
 .divcard {
   display: grid;
   gap: 20px;
@@ -56,4 +58,3 @@ img {
   margin-bottom: 7px;
   cursor: pointer;
 }
-

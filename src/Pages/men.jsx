@@ -1,7 +1,8 @@
 import { useContext } from "react"
 import { Shopping } from "../components/jsx/shopingcontext";
-import "bootstrap/dist/css/bootstrap.min.css";
 import productscreating from "../components/jsx/function";
+import Header from "../components/jsx/header";
+import Footer from "../components/jsx/footer.jsx";
 
 export default function Men() {
 
@@ -10,5 +11,11 @@ export default function Men() {
     return ele.category === "men's clothing";
   });
 
-  return productscreating(filteringData,setshopcart,shopCart)
+  return (
+    <>
+      <Header />
+      {productscreating(filteringData, setshopcart, shopCart)}
+      <Footer />
+    </>
+  );
 }

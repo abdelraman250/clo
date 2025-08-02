@@ -1,5 +1,7 @@
 
 
+
+
 export default function productscreating(filteringData,setshopcart,shopCart) {
 
 function handleaddclick(product) {
@@ -8,7 +10,7 @@ function handleaddclick(product) {
 }
 
     return (
-      <div>
+      <div className="parrent">
         <h1 style={{ textAlign: "center" }}>Products</h1>
         <div className="divcard" id="divcard">
           {filteringData.map((product, index) => {
@@ -44,7 +46,7 @@ export function shopingCartCreation(shopCart,setshopcart) {
   }
 
   return (
-    <div>
+    <div className="parrent">
       <h1 style={{ textAlign: "center" }}>shoping cart {shopCart.length} </h1>
       <div className="divcard" id="divcard">
         {shopCart.map((item) => {
